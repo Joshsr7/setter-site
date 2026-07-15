@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Setter Consulting Services LLC — Automation & Communication Systems for Small Business</title>
+  <meta name="description" content="Setter Consulting Services LLC builds automated scheduling, messaging, and phone systems for small businesses in South Florida.">
+  <style>
+    :root {
+      --ink: #16201c;
+      --paper: #f6f4ee;
+      --line: #cdc7b8;
+      --signal: #2f6f4e;      /* deep signal green */
+      --signal-soft: #e4ede6;
+      --amber: #c8842a;
+      --muted: #5f6660;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 940px; margin: 0 auto; padding: 0 28px; }
+
+    /* ---- top bar ---- */
+    header {
+      border-bottom: 1px solid var(--line);
+      padding: 22px 0;
+    }
+    .bar { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+    .mark {
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: 0.02em;
+    }
+    .mark span { color: var(--signal); }
+    .loc { font-size: 13px; color: var(--muted); letter-spacing: 0.04em; text-transform: uppercase; }
+
+    /* ---- hero ---- */
+    .hero { padding: 88px 0 72px; border-bottom: 1px solid var(--line); }
+    .eyebrow {
+      font-size: 12px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 22px;
+      font-weight: 700;
+    }
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 400;
+      font-size: clamp(32px, 6vw, 56px);
+      line-height: 1.08;
+      letter-spacing: -0.01em;
+      max-width: 18ch;
+      margin-bottom: 26px;
+    }
+    h1 em { font-style: italic; color: var(--signal); }
+    .lede {
+      font-size: clamp(17px, 2.4vw, 20px);
+      color: var(--muted);
+      max-width: 56ch;
+    }
+
+    /* ---- what we do ---- */
+    section { padding: 66px 0; border-bottom: 1px solid var(--line); }
+    .section-label {
+      font-size: 12px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 30px;
+      font-weight: 700;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+    .cell h3 {
+      font-family: Georgia, serif;
+      font-weight: 400;
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+    .cell p { font-size: 15px; color: var(--muted); }
+    .cell .no {
+      font-size: 13px;
+      color: var(--signal);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      display: block;
+      margin-bottom: 14px;
+      border-top: 2px solid var(--signal);
+      padding-top: 10px;
+      width: 30px;
+    }
+
+    /* ---- about ---- */
+    .about p { max-width: 62ch; font-size: 17px; }
+    .about p + p { margin-top: 18px; }
+
+    /* ---- contact ---- */
+    .contact { background: var(--signal-soft); border-bottom: none; }
+    .contact .rows { display: grid; grid-template-columns: repeat(2, 1fr); gap: 34px; max-width: 640px; }
+    .field .k {
+      font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 6px; font-weight: 700;
+    }
+    .field .v { font-size: 17px; }
+    .field .v a { color: var(--signal); text-decoration: none; border-bottom: 1px solid var(--line); }
+    .field .v a:hover { border-color: var(--signal); }
+
+    /* ---- footer ---- */
+    footer { padding: 34px 0; font-size: 13px; color: var(--muted); }
+    .footer-row { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+
+    @media (max-width: 720px) {
+      .grid { grid-template-columns: 1fr; gap: 34px; }
+      .contact .rows { grid-template-columns: 1fr; }
+      .hero { padding: 60px 0 48px; }
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      .hero > * { animation: rise 0.6s ease both; }
+      .hero .eyebrow { animation-delay: 0.02s; }
+      .hero h1 { animation-delay: 0.10s; }
+      .hero .lede { animation-delay: 0.18s; }
+    }
+    @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap bar">
+      <div class="mark">Setter<span>.</span> Consulting Services</div>
+      <div class="loc">Boca Raton, Florida</div>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <div class="hero">
+      <div class="eyebrow">Automation for small business</div>
+      <h1>We build the systems that <em>answer the phone,</em> confirm the appointment, and send the reminder.</h1>
+      <p class="lede">Setter Consulting Services LLC designs and runs automated scheduling, messaging, and phone-confirmation systems for small businesses across South Florida — so the work happens without anyone having to remember to do it.</p>
+    </div>
+
+    <section>
+      <div class="section-label">What we build</div>
+      <div class="grid">
+        <div class="cell">
+          <span class="no">01</span>
+          <h3>Appointment confirmations</h3>
+          <p>Automated calls and texts that confirm each day's appointments, capture the response, and flag the ones that need a human.</p>
+        </div>
+        <div class="cell">
+          <span class="no">02</span>
+          <h3>Scheduling &amp; messaging</h3>
+          <p>Two-way SMS and voice systems that handle booking, rescheduling, and reminders in the customer's own language.</p>
+        </div>
+        <div class="cell">
+          <span class="no">03</span>
+          <h3>Integrations</h3>
+          <p>Connections to the calendar, CRM, and field-service tools a business already runs on, so the automation fits the existing workflow.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="section-label">About</div>
+      <p>Setter Consulting Services LLC is a Florida-registered software and communication consultancy based in Boca Raton. We work with small, service-based businesses — repair companies, schools, studios, and local shops — that lose time and revenue to manual phone and scheduling work.</p>
+      <p>Our systems use standard telephony and messaging infrastructure to place and receive calls, send text reminders, and keep a business's calendar accurate, with a person always in the loop for anything that isn't routine.</p>
+    </section>
+
+    <section class="contact">
+      <div class="section-label">Contact</div>
+      <div class="rows">
+        <div class="field">
+          <div class="k">Email</div>
+          <div class="v"><a href="mailto:josh@setterconsulting.com">josh@setterconsulting.com</a></div>
+        </div>
+        <div class="field">
+          <div class="k">Business</div>
+          <div class="v">Setter Consulting Services LLC</div>
+        </div>
+        <div class="field">
+          <div class="k">Location</div>
+          <div class="v">1301 NW 12 Ave, Ste 421A<br>Boca Raton, FL 33486</div>
+        </div>
+        <div class="field">
+          <div class="k">Web</div>
+          <div class="v"><a href="https://setterconsulting.com">setterconsulting.com</a></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="wrap footer-row">
+      <div>© 2026 Setter Consulting Services LLC</div>
+      <div>Boca Raton, Florida · United States</div>
+    </div>
+  </footer>
+</body>
+</html>
