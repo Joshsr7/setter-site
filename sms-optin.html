@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointment Text Confirmations — Setter Consulting Services</title>
+  <meta name="description" content="Opt in to receive SMS appointment confirmation messages from Setter Consulting Services on behalf of your service provider.">
+  <style>
+    :root{
+      --ink:#16201c; --paper:#f6f4ee; --line:#cdc7b8;
+      --signal:#2f6f4e; --signal-soft:#e4ede6; --muted:#5f6660;
+    }
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{background:var(--paper);color:var(--ink);
+      font-family:"Helvetica Neue",Arial,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;}
+    .wrap{max-width:620px;margin:0 auto;padding:0 24px;}
+    header{border-bottom:1px solid var(--line);padding:22px 0;}
+    .mark{font-weight:700;font-size:17px;letter-spacing:.02em;}
+    .mark span{color:var(--signal);}
+    h1{font-family:Georgia,serif;font-weight:400;font-size:clamp(26px,5vw,36px);
+      line-height:1.12;margin:44px 0 14px;}
+    .lede{color:var(--muted);font-size:17px;margin-bottom:32px;}
+    label{display:block;font-size:13px;letter-spacing:.06em;text-transform:uppercase;
+      color:var(--muted);font-weight:700;margin:18px 0 6px;}
+    input[type=text],input[type=tel]{width:100%;padding:12px 14px;font-size:16px;
+      border:1px solid var(--line);border-radius:6px;background:#fff;font-family:inherit;}
+    .consent{display:flex;gap:12px;align-items:flex-start;margin:26px 0 8px;
+      background:var(--signal-soft);padding:16px 18px;border-radius:8px;}
+    .consent input{margin-top:4px;width:18px;height:18px;flex:none;}
+    .consent label{margin:0;text-transform:none;letter-spacing:0;font-size:14px;
+      font-weight:400;color:var(--ink);line-height:1.5;}
+    button{margin-top:22px;background:var(--signal);color:#fff;border:none;
+      padding:14px 26px;font-size:16px;font-weight:600;border-radius:8px;cursor:pointer;font-family:inherit;}
+    button:hover{background:#255c40;}
+    .fine{font-size:13px;color:var(--muted);margin-top:22px;line-height:1.6;}
+    a{color:var(--signal);}
+    footer{border-top:1px solid var(--line);margin-top:48px;padding:24px 0;
+      font-size:13px;color:var(--muted);}
+    .note{background:#fff;border:1px solid var(--line);border-radius:8px;
+      padding:14px 16px;font-size:13px;color:var(--muted);margin-top:20px;}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap mark">Setter<span>.</span> Consulting Services</div>
+  </header>
+
+  <div class="wrap">
+    <h1>Get appointment confirmations by text</h1>
+    <p class="lede">Setter Consulting Services LLC sends SMS appointment confirmations on behalf of
+    the service business you booked with — such as Magnum Appliances. Sign up below to receive a
+    text confirming your scheduled service visit.</p>
+
+    <form onsubmit="event.preventDefault(); document.getElementById('done').style.display='block'; this.style.display='none';">
+      <label for="name">Full name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+
+      <label for="business">Business you booked with</label>
+      <input type="text" id="business" name="business" placeholder="e.g. Magnum Appliances">
+
+      <label for="phone">Mobile phone number</label>
+      <input type="tel" id="phone" name="phone" placeholder="(954) 555-0100" required>
+
+      <div class="consent">
+        <input type="checkbox" id="consent" name="consent" required>
+        <label for="consent">I agree to receive SMS appointment confirmation and reminder
+        messages from Setter Consulting Services on behalf of my service provider at the number
+        provided. Consent is not a condition of purchase. Message frequency varies. Message and
+        data rates may apply. Reply STOP to opt out or HELP for help.</label>
+      </div>
+
+      <button type="submit">Sign up for text confirmations</button>
+    </form>
+
+    <div id="done" style="display:none;" class="note">
+      Thank you — you're signed up for appointment text confirmations. Reply STOP at any time to opt out.
+    </div>
+
+    <p class="fine">
+      By submitting, you agree to our
+      <a href="https://setterconsulting.com/sms-privacy">SMS Privacy Policy</a> and
+      <a href="https://setterconsulting.com/sms-terms">SMS Terms &amp; Conditions</a>.
+      We do not sell or share your mobile number with third parties for marketing purposes.
+      Message and data rates may apply. Message frequency varies based on your scheduled appointments.
+    </p>
+
+    <div class="note">
+      Customers may also opt in verbally when booking an appointment by phone with a Setter client
+      business, or by texting START to the business's number. All methods provide the same
+      confirmation and opt-out options described above.
+    </div>
+  </div>
+
+  <footer>
+    <div class="wrap">© 2026 Setter Consulting Services LLC · Boca Raton, Florida</div>
+  </footer>
+</body>
+</html>
