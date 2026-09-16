@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Appointment Text Confirmations — Setter Consulting Services</title>
-  <meta name="description" content="Opt in to receive SMS appointment confirmation messages from Setter Consulting Services on behalf of your service provider.">
+  <meta name="description" content="Optionally sign up to receive SMS appointment confirmation messages from Setter Consulting Services on behalf of your service provider.">
   <style>
     :root{
       --ink:#16201c; --paper:#f6f4ee; --line:#cdc7b8;
@@ -48,7 +47,7 @@
 
   <div class="wrap">
     <h1>Get appointment confirmations by text</h1>
-    <p class="lede">Setter Consulting Services LLC sends SMS appointment confirmations on behalf of the service business you booked with. Sign up below to receive a text confirming your scheduled service visit.</p>
+    <p class="lede">Setter Consulting Services LLC sends SMS appointment confirmations on behalf of the service business you booked with. Signing up for text messages is optional — you can book and receive service without it.</p>
 
     <form onsubmit="event.preventDefault(); document.getElementById('done').style.display='block'; this.style.display='none';">
       <label for="name">Full name</label>
@@ -58,26 +57,27 @@
       <input type="text" id="business" name="business" placeholder="e.g. your service provider">
 
       <label for="phone">Mobile phone number</label>
-      <input type="tel" id="phone" name="phone" placeholder="(954) 555-0100" required>
+      <input type="tel" id="phone" name="phone" placeholder="(954) 555-0100">
 
       <div class="consent">
         <input type="checkbox" id="consent" name="consent">
         <label for="consent"><strong>Optional:</strong> I agree to receive SMS appointment
         confirmation and reminder messages from Setter Consulting Services at the number provided.
-        This is optional and not required to book or receive service. Consent is not a condition of
-        purchase. Message frequency varies. Message and data rates may apply. Reply STOP to opt out
-        or HELP for help.</label>
+        This is optional and is not required to book or receive service. Consent is not a condition
+        of purchase. Message frequency varies. Message and data rates may apply. Reply STOP to opt
+        out or HELP for help.</label>
       </div>
 
       <button type="submit">Sign up for text confirmations</button>
     </form>
 
     <div id="done" style="display:none;" class="note">
-      Thank you — you're signed up for appointment text confirmations. Reply STOP at any time to opt out.
+      Thank you — if you checked the box above, you're signed up for appointment text confirmations.
+      Reply STOP at any time to opt out.
     </div>
 
     <p class="fine">
-      By submitting, you agree to our
+      See our
       <a href="https://setterconsulting.com/sms-privacy">SMS Privacy Policy</a> and
       <a href="https://setterconsulting.com/sms-terms">SMS Terms &amp; Conditions</a>.
       We do not sell or share your mobile number with third parties for marketing purposes.
@@ -85,8 +85,8 @@
     </p>
 
     <div class="note">
-      Customers may also opt in by texting START to receive appointment confirmations. All methods
-      provide the same confirmation and opt-out options described above.
+      Signing up for text messages is always optional. You may also opt in by texting START to
+      receive appointment confirmations, and can reply STOP at any time to opt out.
     </div>
   </div>
 
